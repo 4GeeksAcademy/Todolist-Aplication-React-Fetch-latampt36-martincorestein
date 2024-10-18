@@ -1,12 +1,103 @@
 
-/* 
+ body {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.app-container {
+    position: relative;
+    width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-*/
+.page-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    z-index: -1;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.page-layer:nth-child(3) {
+    top: 5px;
+    left: 5px;
+}
+
+.page-layer:nth-child(2) {
+    top: 10px;
+    left: 10px;
+}
+
+.page-layer:nth-child(1) {
+    top: 15px;
+    left: 15px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-size: 72px;
+    font-weight: lighter;
+    color: rgba(175, 47, 47, 0.15);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.task-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #ededed;
+    outline: none;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ededed;
+    font-size: 18px;
+    color: #4d4d4d;
+}
+
+.todo-item:hover .delete-icon {
+    display: inline;
+}
+
+.delete-icon {
+    color: #cc9a9a;
+    cursor: pointer;
+    display: none;
+}
+.delete-icon :hover{
+    color: #b32424;
+}
+
+.task-counter {
+    padding: 10px;
+    font-size: 12px;
+    color: #777;
+    text-align: left;
+}

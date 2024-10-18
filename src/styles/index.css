@@ -90,9 +90,13 @@
     color: #cc9a9a;
     cursor: pointer;
     display: none;
+    font-family: "system-ui";
+    font-size: 18px;
+    font-weight: bold;
 }
 .delete-icon :hover{
     color: #b32424;
+    font-size: 20px;
 }
 
 .task-counter {

@@ -21,7 +21,9 @@ const App = () => {
                 return resp.json();
             })
             .then((data) => {
-                console.log('Estructura de las tareas:', data.todos); 
+
+                console.log('Estructura de las tareas:', data.todos);
+                
                 if (data.todos && Array.isArray(data.todos)) {
                     setTasks(data.todos);
                 } else {

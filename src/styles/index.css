@@ -105,3 +105,18 @@
     color: #777;
     text-align: left;
 }
+
+.delete-all-button {
+    background-color: #b83f45;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.delete-all-button:hover {
+    background-color: #a03136;
+}

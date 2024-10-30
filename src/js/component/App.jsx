@@ -154,7 +154,37 @@ const App = () => {
             setIsLoading(false);
         }
     };
+    // const deleteAllTasks = async () => {
+    //     setIsLoading(true);
+    //     setError(null);
 
+    //     try {
+    //         const response = await fetch(`${API_URL}/users/${USER}`);
+    //         if (!response.ok) throw new Error('Error al obtener las tareas');
+            
+    //         const deleteResponse = await fetch(`${API_URL}/todos/${USER}`, {
+    //             method: "PUT",
+    //             headers: {
+    //                 "Content-Type": "application/json"
+    //             },
+    //             body: JSON.stringify([]) 
+    //         });
+
+    //         if (!deleteResponse.ok) {
+    //             const errorData = await deleteResponse.json();
+    //             console.error('Error response:', errorData);
+    //             throw new Error('Error al eliminar todas las tareas');
+    //         }
+
+    //         setTasks([]);
+    //     } catch (error) {
+    //         console.error("Error clearing all tasks:", error);
+    //         setError('Error al eliminar todas las tareas');
+    //         await fetchTasks();
+    //     } finally {
+    //         setIsLoading(false);
+    //     }
+    // };
     
     return (
         <div className="app-container">
